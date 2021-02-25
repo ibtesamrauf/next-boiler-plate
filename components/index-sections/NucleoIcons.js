@@ -11,17 +11,14 @@ function NucleoIcons() {
         <Container>
           <Row>
             <Col lg="6" md="12">
-              <h2 className="title">Nucleo Icons</h2>
+              <h2 className="title">Linear Icons</h2>
               <h5 className="description">
-                UI Kit comes with 100 custom icons made by our friends from
-                NucleoApp. The official package contains over 2.100 thin icons
-                which are looking great in combination with UI Kit PRO Make
-                sure you check all of them and use those that you like the most.
+               
               </h5>
               <Button
                 className="btn-round mr-1"
                 color="info"
-                href="/nucleo-icons"
+                href="https://linearicons.com/"
                 size="lg"
                 target="_blank"
               >
@@ -30,7 +27,7 @@ function NucleoIcons() {
               <Button
                 className="btn-round"
                 color="info"
-                href="https://nucleoapp.com/?ref=1712"
+                href="https://linearicons.com/"
                 outline
                 size="lg"
                 target="_blank"

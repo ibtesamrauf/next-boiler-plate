@@ -2,7 +2,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container, Form, Input, Button, InputGroupAddon, InputGroup } from "reactstrap";
 // core components
 
 function IndexHeader() {
@@ -28,23 +28,32 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("../../assets/img/header.jpg") + ")",
+            backgroundImage: "url(" + require("../../assets/img/main-slider.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("../../assets/img/now-logo.png")}
-            ></img>
-            <h1 className="h1-seo">UI Kit.</h1>
-            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+          <div className="slider-text-inner">
+            <h1>Start a new career, today</h1>
+
+            <Form id="search_form" action="trainees/search_location.php" method="post">
+              <div className="slider-search">
+                <div className="location-icon sharelocation" id="sharelocation"></div>
+
+                <InputGroup>
+                  <Input placeholder="Enter your postcode or town name" type="text" id="CoursesZipcode" bsSize="lg" name="loc_name"></Input>
+                  <InputGroupAddon addonType="append">
+                    <Button className="my-0 px-4" color="warning" size="lg"> Search </Button>
+                  </InputGroupAddon>
+                </InputGroup>
+
+                <div className="location_loader d-none"></div>
+              </div>
+            </Form>
+
+            <h2 className="mt-5">Change your career today, with one our approved training providers</h2>
+            
           </div>
-          <h6 className="category category-absolute">
-            Designed For Gl.
-          </h6>
         </Container>
       </div>
     </>
